@@ -1,7 +1,13 @@
-:root {
+:root, [data-gin-accent] {
 	--ucb-color-gold: #cbb271;
 	--ucb-color-gold-gray: #a6a6a6;
 	--colorGinSwitch: var(--ucb-color-gold);
+	--colorGinPrimaryRGB: 2, 119, 189 !important;
+	--colorGinPrimaryHover: #005ea4 !important;
+	--colorGinPrimaryActive: #005197 !important;
+	--colorGinAppBackgroundRGB: 250, 250, 248 !important;
+	--colorGinAppBackground: rgb(var(--colorGinAppBackgroundRGB)) !important;
+	--colorGinTableHeader: #d9eaf5 !important;
 }
 
 body {
@@ -17,12 +23,17 @@ h1, h2, h3, h4, h5 {
 
 .button.ucb-button, .button.ucb-button:not(:focus),
 .button.form-submit, .button.form-submit:not(:focus),
-.button.button--action, .button.button--action:not(:focus) {
+.button.button--action, .button.button--action:not(:focus),
+.button.button--secondary, .button.button--secondary:not(:focus) {
 	color: #FFFFFF;
 	background-color: rgb(2, 119, 189);
 	border-color: rgb(2, 119, 189);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+#block-boulderd9-admin-local-actions .local-actions .button.button--action:not(:hover) {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .button.button--extrasmall, .button.button--extrasmall:not(:focus),
@@ -39,13 +50,15 @@ h1, h2, h3, h4, h5 {
 
 .button.ucb-button:hover, .button.ucb-button:not(:focus):hover, .button.ucb-button:active, .button.ucb-button:not(:focus):active,
 .button.form-submit:hover, .button.form-submit:not(:focus):hover, .button.form-submit:active, .button.form-submit:not(:focus):active,
-.button.button--action:hover, .button.button--action:not(:focus):hover, .button.button--action:active, .button.button--action:not(:focus):active {
+.button.button--action:hover, .button.button--action:not(:focus):hover, .button.button--action:active, .button.button--action:not(:focus):active,
+.button.button--secondary:hover, .button.button--secondary:not(:focus):hover, .button.button--secondary:active, .button.button--secondary:not(:focus):active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .button.ucb-button:active, .button.ucb-button:not(:focus):active, .button.ucb-button:focus,
 .button.form-submit:active, .button.form-submit:not(:focus):active, .button.form-submit:focus,
-.button.button--action:active, .button.button--action:not(:focus):active, .button.button--action:focus {
+.button.button--action:active, .button.button--action:not(:focus):active, .button.button--action:focus,
+.button.button--secondary:active, .button.button--secondary:not(:focus):active, .button.button--secondary:focus {
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
 }
 
@@ -69,8 +82,20 @@ h1, h2, h3, h4, h5 {
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
 }
 
+.button.ucb-button.ucb-submit-button.button--danger, .button.ucb-button.ucb-submit-button.button--danger:not(:focus) {
+	color: #FFFFFF;
+	background-color: #B71C1C;
+	border-color: #B71C1C !important;
+}
 
-.ucb-radio.form-boolean--type-radio:checked:not(:disabled), .ucb-radio.form-boolean--type-radio:checked:not(:disabled):hover {
+.button.ucb-button.ucb-submit-button.button--danger:hover, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):hover, .button.ucb-button.ucb-submit-button.button--danger:active, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):active { 
+	color: #FFFFFF;
+	background-color: #831313;
+	border-color: #831313 !important;
+}
+
+
+.ucb-radio.form-boolean--type-radio:checked:not(:disabled), .ucb-radio.form-boolean--type-radio:checked:not(:disabled):hover, .ucb-radio.form-boolean--type-radio:checked:not(:disabled):hover:focus, .ucb-radio.form-boolean--type-radio:checked:not(:disabled):active, .ucb-radio.form-boolean--type-radio:checked:not(:disabled):focus {
 	border-color: var(--ucb-color-gold);
 	box-shadow: inset 0 0 0 5px var(--ucb-color-gold);
 }
