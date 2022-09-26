@@ -24,7 +24,8 @@ h1, h2, h3, h4, h5 {
 .button.ucb-button, .button.ucb-button:not(:focus),
 .button.form-submit, .button.form-submit:not(:focus),
 .button.button--action, .button.button--action:not(:focus),
-.button.button--secondary, .button.button--secondary:not(:focus) {
+.button.button--secondary, .button.button--secondary:not(:focus),
+#edit-actions .button[data-drupal-selector], #edit-actions .button[data-drupal-selector]:not(:focus) {
 	color: #FFFFFF;
 	background-color: rgb(2, 119, 189);
 	border-color: rgb(2, 119, 189);
@@ -51,18 +52,23 @@ h1, h2, h3, h4, h5 {
 .button.ucb-button:hover, .button.ucb-button:not(:focus):hover, .button.ucb-button:active, .button.ucb-button:not(:focus):active,
 .button.form-submit:hover, .button.form-submit:not(:focus):hover, .button.form-submit:active, .button.form-submit:not(:focus):active,
 .button.button--action:hover, .button.button--action:not(:focus):hover, .button.button--action:active, .button.button--action:not(:focus):active,
-.button.button--secondary:hover, .button.button--secondary:not(:focus):hover, .button.button--secondary:active, .button.button--secondary:not(:focus):active {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.button.button--secondary:hover, .button.button--secondary:not(:focus):hover, .button.button--secondary:active, .button.button--secondary:not(:focus):active,
+#edit-actions .button[data-drupal-selector]:hover, #edit-actions .button[data-drupal-selector]:not(:focus):hover, #edit-actions .button[data-drupal-selector]:active, #edit-actions .button[data-drupal-selector]:not(:focus):active {
+	background-color: var(--colorGinPrimaryHover);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .button.ucb-button:active, .button.ucb-button:not(:focus):active, .button.ucb-button:focus,
 .button.form-submit:active, .button.form-submit:not(:focus):active, .button.form-submit:focus,
 .button.button--action:active, .button.button--action:not(:focus):active, .button.button--action:focus,
-.button.button--secondary:active, .button.button--secondary:not(:focus):active, .button.button--secondary:focus {
+.button.button--secondary:active, .button.button--secondary:not(:focus):active, .button.button--secondary:focus,
+#edit-actions .button[data-drupal-selector]:active, #edit-actions .button[data-drupal-selector]:not(:focus):active, #edit-actions .button[data-drupal-selector]:focus {
+	background-color: var(--colorGinPrimaryHover);
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
 }
 
-.button.ucb-button.ucb-submit-button.button--primary, .button.ucb-button.ucb-submit-button.button--primary:not(:focus) {
+.button.ucb-button.ucb-submit-button.button--primary, .button.ucb-button.ucb-submit-button.button--primary:not(:focus),
+#edit-actions .button.ucb-button.ucb-submit-button.button--primary, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:not(:focus) {
     color: #111111;
     background-color: var(--ucb-color-gold);
     border-color: var(--ucb-color-gold) !important;
@@ -71,27 +77,31 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.button.ucb-button.ucb-submit-button.button--primary:hover, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):hover, .button.ucb-button.ucb-submit-button.button--primary:active, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active {
+.button.ucb-button.ucb-submit-button.button--primary:hover, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):hover, .button.ucb-button.ucb-submit-button.button--primary:active, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active,
+#edit-actions .button.ucb-button.ucb-submit-button.button--primary:hover, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:not(:focus):hover, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:active, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active {
     color: #111111;
     background-color: var(--ucb-color-gold-gray);
 	border-color: var(--ucb-color-gold-gray) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.button.ucb-button.ucb-submit-button.button--primary:active, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active, .button.ucb-button.ucb-submit-button.button--primary:focus {
+.button.ucb-button.ucb-submit-button.button--primary:active, .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active, .button.ucb-button.ucb-submit-button.button--primary:focus,
+#edit-actions .button.ucb-button.ucb-submit-button.button--primary:active, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:not(:focus):active, #edit-actions .button.ucb-button.ucb-submit-button.button--primary:focus {
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
 }
 
-.button.ucb-button.ucb-submit-button.button--danger, .button.ucb-button.ucb-submit-button.button--danger:not(:focus) {
+.button.ucb-button.ucb-submit-button.button--danger, .button.ucb-button.ucb-submit-button.button--danger:not(:focus),
+#edit-actions .button.ucb-button.ucb-submit-button.button--danger, #edit-actions .button.ucb-button.ucb-submit-button.button--danger:not(:focus) {
 	color: #FFFFFF;
-	background-color: #B71C1C;
-	border-color: #B71C1C !important;
+	background-color: #b51c1c;
+	border-color: #b51c1c !important;
 }
 
-.button.ucb-button.ucb-submit-button.button--danger:hover, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):hover, .button.ucb-button.ucb-submit-button.button--danger:active, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):active { 
+.button.ucb-button.ucb-submit-button.button--danger:hover, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):hover, .button.ucb-button.ucb-submit-button.button--danger:active, .button.ucb-button.ucb-submit-button.button--danger:not(:focus):active,
+#edit-actions .button.ucb-button.ucb-submit-button.button--danger:hover, #edit-actions .button.ucb-button.ucb-submit-button.button--danger:not(:focus):hover, #edit-actions .button.ucb-button.ucb-submit-button.button--danger:active, #edit-actions .button.ucb-button.ucb-submit-button.button--danger:not(:focus):active { 
 	color: #FFFFFF;
-	background-color: #831313;
-	border-color: #831313 !important;
+	background-color: #7f1515;
+	border-color: #7f1515 !important;
 }
 
 
