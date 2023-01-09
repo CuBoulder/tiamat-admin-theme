@@ -1,7 +1,7 @@
 name: University of Colorado Boulder Drupal 9 Admin Theme
 description: 'Drupal 9 admin theme for CU Boulder branded web properties'
 package: CU Boulder
-core_version_requirement: '^8 || ^9'
+core_version_requirement: '^9 || ^10'
 type: theme
 base theme: gin
 

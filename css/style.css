@@ -1,13 +1,13 @@
 :root, [data-gin-accent] {
 	--ucb-color-gold: #cbb271;
 	--ucb-color-gold-gray: #a6a6a6;
-	--colorGinSwitch: var(--ucb-color-gold);
-	--colorGinPrimaryRGB: 2, 119, 189 !important;
-	--colorGinPrimaryHover: #005ea4 !important;
-	--colorGinPrimaryActive: #005197 !important;
-	--colorGinAppBackgroundRGB: 250, 250, 248 !important;
-	--colorGinAppBackground: rgb(var(--colorGinAppBackgroundRGB)) !important;
-	--colorGinTableHeader: #d9eaf5 !important;
+	--gin-switch: var(--ucb-color-gold);
+	--gin-color-primary-rgb: 2, 119, 189 !important;
+	--gin-color-primary-hover: #005ea4 !important;
+	--gin-color-primary-active: #005197 !important;
+	--gin-bg-app-rgb: 250, 249, 246 !important;
+	--gin-bg-app: rgb(var(--gin-bg-app-rgb)) !important;
+	--gin-bg-header: #d9eaf5 !important;
 }
 
 body {
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5 {
 .button.button--action:hover, .button.button--action:not(:focus):hover, .button.button--action:active, .button.button--action:not(:focus):active,
 .button.button--secondary:hover, .button.button--secondary:not(:focus):hover, .button.button--secondary:active, .button.button--secondary:not(:focus):active,
 #edit-actions .button[data-drupal-selector]:hover, #edit-actions .button[data-drupal-selector]:not(:focus):hover, #edit-actions .button[data-drupal-selector]:active, #edit-actions .button[data-drupal-selector]:not(:focus):active {
-	background-color: var(--colorGinPrimaryHover);
+	background-color: var(--gin-color-primary-hover);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
 .button.button--action:active, .button.button--action:not(:focus):active, .button.button--action:focus,
 .button.button--secondary:active, .button.button--secondary:not(:focus):active, .button.button--secondary:focus,
 #edit-actions .button[data-drupal-selector]:active, #edit-actions .button[data-drupal-selector]:not(:focus):active, #edit-actions .button[data-drupal-selector]:focus {
-	background-color: var(--colorGinPrimaryHover);
+	background-color: var(--gin-color-primary-hover);
 	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
 }
 
